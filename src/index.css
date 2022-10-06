@@ -7,10 +7,15 @@
   outline: none;
   border: none;
 }
+
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --primary-color: #20c042;
   --secondary-color: #2dd45cdb;
   --darkgrey: #22262a;
+  --darkgrey2: #515456;
   --lightgrey: #d3d3d3;
   --grey: #808080;
 }
