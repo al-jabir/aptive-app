@@ -21,7 +21,7 @@ header {
   color: #fff;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
   .humbers {
     display: block;
     z-index: 9;
@@ -39,8 +39,7 @@ header {
     top: -100%;
     bottom: 0;
     background-color: var(--darkgrey);
-    /* top: 70px; */
-    transition: top 2s ease-in-out;
+    transition: top 1.5s ease-in;
   }
   .nav-menu li {
     margin: 2rem 0;
