@@ -29,14 +29,14 @@ const Hero = () => {
               <p>USED BY</p>
               <div className="icons">
                 <i>
-                  <FaDatabase />
+                  <FaDatabase style={{ marginRight: "5px" }} />
                   Staxx
                 </i>
                 <i>
-                  <FaAsterisk /> Star AI
+                  <FaAsterisk style={{ marginRight: "5px" }} /> Star AI
                 </i>
                 <i>
-                  <FaAccusoft /> Accusoft
+                  <FaAccusoft style={{ marginRight: "5px" }} /> Accusoft
                 </i>
               </div>
             </div>
