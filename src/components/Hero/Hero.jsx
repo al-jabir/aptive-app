@@ -29,14 +29,14 @@ const Hero = () => {
               <p>USED BY</p>
               <div className="icons">
                 <i>
-                  <FaDatabase style={{ marginRight: "5px" }} />
+                  <FaDatabase />
                   Staxx
                 </i>
                 <i>
-                  <FaAsterisk style={{ marginRight: "5px" }} /> Star AI
+                  <FaAsterisk /> Star AI
                 </i>
                 <i>
-                  <FaAccusoft style={{ marginRight: "5px" }} /> Accusoft
+                  <FaAccusoft /> Accusoft
                 </i>
               </div>
             </div>
@@ -69,10 +69,12 @@ const Hero = () => {
                 </form>
               </div>
               <div className="form-footer">
-                <p>By signing up, you agree to our</p>
-                <span className="primary-color">Terms, Data Policy</span>
-                and
-                <span className="primary-color">Cookies Policy</span>
+                <p>
+                  By signing up, you agree to our
+                  <span className="primary-color">Terms, Data Policy</span>
+                  and
+                  <span className="primary-color">Cookies Policy</span>
+                </p>
               </div>
             </div>
           </div>
