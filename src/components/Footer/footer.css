@@ -1,9 +1,11 @@
 .footer {
+  height: auto;
   width: 100%;
   background-color: var(--darkgrey);
+  margin-bottom: -20px;
 }
 
-.footer .container {
+.footer .container .contents-top {
   max-width: 1240px;
   padding: 3rem 1rem;
   margin: auto;
@@ -45,19 +47,22 @@ p {
   width: 150px;
 }
 
-.footer .content {
+.footer-bottom .content {
   max-width: 1240px;
   margin: auto;
   padding: 2rem;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   border-top: 1px solid var(--grey);
+  /* padding-bottom: 2rem; */
 }
 
 @media screen and (max-width: 960px) {
-  .footer .container {
+  .footer .container .contents-top {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-around;
     padding: 1rem;
   }
@@ -83,11 +88,18 @@ p {
   .footer button {
     width: 100%;
     margin: 0.2rem 0;
+    padding: 8px 16px;
+    border-radius: 0 0 2px 2px;
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
   }
 
   .footer-bottom .content {
     padding: 1rem;
     justify-content: center;
+    gap: 1rem;
   }
 
   .footer-bottom .right {
