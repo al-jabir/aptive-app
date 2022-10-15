@@ -1,0 +1,95 @@
+.pricing {
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.pricing .container {
+  max-width: 1240px;
+  padding: 1rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.pricing .top-content {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  border-bottom: 1px solid var(--lightgrey);
+  padding-bottom: 3rem;
+}
+
+.pricing .top-content h2 {
+  font-size: 38px;
+  padding-bottom: 0.5rem;
+}
+
+.pricing .top-content span {
+  color: var(--primary-color);
+}
+
+.pricing .top-content p {
+  color: var(--grey);
+  font-size: 1rem;
+}
+
+.btn-div button {
+  /* display: inline-block; */
+  /* width: 120px; */
+  padding: 10px 25px;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 15px;
+  margin-top: 10px;
+  border: 1px solid;
+  border-radius: 2px;
+  transition: 0.5s ease-out;
+}
+.btn-div button:hover {
+  color: var(--primary-color);
+  background-color: transparent;
+  border-color: var(--primary-color);
+}
+.pricing .bottom-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 3rem auto;
+}
+
+.pricing .card {
+  display: flex;
+  /* border: 1px slateblue solid; */
+  flex-direction: column;
+  padding: 1rem 1rem 1rem 0;
+}
+
+.pricing .card div {
+  /* display: flex; */
+  border-bottom: 1px solid var(--lightgrey);
+  padding: 1rem 0;
+}
+
+.pricing .card span {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.pricing .card h3 {
+  font-size: 28px;
+  margin: 0.7rem 0.7rem 0.7rem 0;
+}
+
+@media only screen and (max-width: 960px) {
+  .pricing .top-content {
+    grid-template-columns: 1fr;
+  }
+  .pricing .top-content h2 {
+    font-size: 32px;
+  }
+  .pricing .bottom-content {
+    /* display: none; */
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
