@@ -21,7 +21,7 @@ header {
   color: #fff;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 960px) {
   .humbers {
     display: block;
     z-index: 9;
