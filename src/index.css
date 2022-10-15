@@ -13,6 +13,10 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+}
 :root {
   --primary-color: #20c042;
   --secondary-color: #2dd45cdb;

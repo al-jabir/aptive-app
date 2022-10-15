@@ -5,13 +5,11 @@
 
 .section-faq .container {
   max-width: 1240px;
-  width: 100%;
-  padding: 1rem 3rem 1rem 5rem;
+  padding: 1rem;
   margin: auto;
   overflow: hidden;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
+  grid-template-columns: 1fr 2fr;
 }
 
 .section-faq h3 {
@@ -46,9 +44,6 @@
   }
 
   .section-faq .container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: 1fr;
   }
 }

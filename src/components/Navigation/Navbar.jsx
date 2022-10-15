@@ -1,37 +1,49 @@
-import React, { useState } from "react";
-import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import { Link } from "react-router-dom";
-import "./navbar.css";
+import React, { useState } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+
+import './navbar.css';
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
-  const onHandleClick = () => setClick(!click);
+  const handleClick = () => setClick(!click);
+
   return (
     <header>
-      <div className="logo">
-        <Link>
-          <h3>Logo</h3>
-        </Link>
-      </div>
-      <nav className="navbar">
-        <ul className={click ? ["nav-menu", "active"].join(" ") : "nav-menu"}>
-          <li>
-            <Link to="/">Home</Link>
+      <nav className='navbar'>
+        <div className='logo'>
+          <Link to='/'>APTIVE</Link>
+        </div>
+        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+          <li className='nav-item'>
+            <Link to='/' className='nav-link'>
+              Home
+            </Link>
           </li>
-          <li>
-            <Link to="/pricing">Pricing</Link>
+          <li className='nav-item'>
+            <Link to='/pricing' className='nav-link'>
+              Pricing
+            </Link>
           </li>
-          <li>
-            <Link to="/faq">FAQ</Link>
+          <li className='nav-item'>
+            <Link to='/faq' className='nav-link'>
+              FAQ
+            </Link>
           </li>
-          <li>
-            <Link to="/contact">Contact</Link>
+          <li className='nav-item'>
+            <Link to='/contact' className='nav-link'>
+              Contact
+            </Link>
           </li>
         </ul>
+        <div className='hamburger' onClick={handleClick}>
+          {click ? (
+            <FaTimes size={20} style={{ color: '#ffffff' }} />
+          ) : (
+            <FaBars size={20} style={{ color: '#ffffff' }} />
+          )}
+        </div>
       </nav>
-      <div className="humbers" onClick={onHandleClick}>
-        {click ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
-      </div>
     </header>
   );
 };
